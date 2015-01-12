@@ -16,7 +16,7 @@ You can further characterize the issue using other labels:
 * **simulator**
 * **bug**
 
-All issues are public, to post a new issue you need a github account and you have to join the robotology organization (ask the administrators).
+All issues are public, but to post a new issue you need a github account.
 
 
  
