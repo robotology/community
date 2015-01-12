@@ -7,7 +7,7 @@ This repository hosts Q&A for the whole robotology group so please the use the f
 
 * icub: all questions related to icub platform
 * ikart: questions related to the ikart platform
-discussion: general discussion
+* discussion: general discussion
 
 You can further characterize the issue using other labels:
 * Firmware
