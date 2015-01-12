@@ -3,7 +3,7 @@ Virtual repository to host Questions &amp; Answers.
 
 To ask questions and/or look for answers visit our [Q&A](https://github.com/robotology/QA/issues)
 
-This repository hosts Q&A for the whole robotology group so please the use the following labels:
+This repository hosts Q&A for the whole robotology group so please use the following labels:
 
 * icub: all questions related to icub platform
 * ikart: questions related to the ikart platform
