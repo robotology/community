@@ -1,5 +1,5 @@
 # Robotology Q&A
-To ask questions and/or look for answers visit our [Q&A](https://github.com/robotology/QA/issues).
+To ask questions and/or look for answers visit our [Q&A](https://github.com/robotology/QA/issues?utf8=%E2%9C%93&q=is%3Aissue).
 
 This repository hosts Q&A for the whole robotology group, so please use the following labels:
 
