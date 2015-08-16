@@ -3,16 +3,16 @@ To ask questions and/or look for answers visit our [**`Q&A`**](https://github.co
 
 This repository hosts Q&A for the whole robotology group, so please use the following labels:
 
-* **icub**: all questions related to icub platform.
-* **ikart**: questions related to the ikart platform.
-* **discussion**: general discussion.
+- **icub**: all questions related to icub platform.
+- **ikart**: questions related to the ikart platform.
+- **discussion**: general discussion.
 
 You can further characterize the issue using other labels:
-* **firmware**
-* **hardware**
-* **software**
-* **simulator**
-* **bug**
+- **firmware**
+- **hardware**
+- **software**
+- **simulator**
+- **bug**
 
 General rules for posting:
 - All **issues are public**, but to post a new issue you need a github account (free).
