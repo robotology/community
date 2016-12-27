@@ -7,4 +7,4 @@
 - Post on [**`icub-support`**](https://github.com/robotology/icub-support) any request for robot maintenance.
 - We try to be neat and thus we _aim_ to **close questions** that have found their answers :smirk:.
 
-If you would like us to review your code, please post your snippets to [**`Gist`**](https://gist.github.com), including instructions to run it.
+If you would like us to review your code, please post your snippets to [**`Gist`**](https://gist.github.com), including instructions to run them.
