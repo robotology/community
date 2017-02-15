@@ -13,5 +13,6 @@ You can further characterize the issue using other labels:
 - **software**
 - **simulator**
 - **bug**
+- ...
 
 ###### [General rules for posting](https://github.com/robotology/QA/blob/master/.github/CONTRIBUTING.md)
