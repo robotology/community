@@ -7,3 +7,5 @@ To ask questions and/or look for answers visit our [**`Q&A`**](https://github.co
 This repository hosts Q&A for the whole robotology group!
 
 #### [General rules for posting](/.github/SUPPORT.md)
+
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/icub)
