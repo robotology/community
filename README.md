@@ -8,3 +8,5 @@
 ### This repository hosts Q&A for the whole robotology group!
 
 ### [General rules for posting](/.github/SUPPORT.md)
+
+### [![Ticket](https://img.shields.io/badge/Ask-Question-informational?style=for-the-badge&logo=github)](../../issues/new/choose)
