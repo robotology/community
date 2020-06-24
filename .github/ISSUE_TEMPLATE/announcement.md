@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-
+Hi @robotology/everyone,
