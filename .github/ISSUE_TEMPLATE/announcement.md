@@ -8,3 +8,7 @@ assignees: ''
 ---
 
 Hi @robotology/everyone,
+
+### Brief description of the announcement
+
+### Detailed context
