@@ -1,0 +1,47 @@
+name: auto-upload announcements to website
+
+on:
+  issues:
+    types: [pinned]    
+
+jobs:
+ dump:
+  runs-on: ubuntu-latest
+  steps:
+  - name: $github
+    run:   |
+        echo "${{ github.event.issue.body }}"
+        echo "${{ toJson(github) }}"
+
+  - name: get release/announcement
+    id: rel_annou
+    run: |
+      if [[ "${{ github.event.issue.title }}" == *"Release"* ]]
+      then
+        echo "::set-output name=release::true"
+      else
+        echo "::set-output name=release::false"
+      fi
+
+  - name: Get summary
+    id: summary
+    run: |
+      echo "${{ github.event.issue.body }}" > temp.txt
+      tr -d '\n' <temp.txt >temp1.txt 
+      tr -d '\r' <temp1.txt >temp2.txt
+      sed -nr 's/.*### Brief description of the announcement(.*)### Detailed context.*/\1/p' <temp2.txt >temp3.txt
+      echo "::set-output name=summary::$(cat temp3.txt)"   
+      
+  - name: Get current date
+    id: date
+    run: |
+        echo "::set-output name=date::$(date +'%Y%m')"
+        echo "::set-output name=date_spelled::$(date +'%B %Y')"
+
+  - name: Repository Dispatch
+    uses: peter-evans/repository-dispatch@v1
+    with:
+      token: ${{ secrets.CODE_REPO_ACCESS_TOKEN }}
+      repository: icub-tech-iit/code
+      event-type: announcement_launched
+      client-payload: '{"description": ${{ toJson(github.event.issue.body) }}, "id": "${{ steps.date.outputs.date }}", "title": ${{ toJson(github.event.issue.title) }}, "date": "${{ steps.date.outputs.date_spelled }}", "summary": "${{ steps.summary.outputs.summary }}", "image": "???", "type" : "announcement_launched", "release": "${{ steps.rel_annou.outputs.release }}"}'
