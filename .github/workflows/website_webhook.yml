@@ -5,18 +5,20 @@ on:
     types: [pinned]    
 
 jobs:
- dump:
+ sendAnnouncement:
   runs-on: ubuntu-latest
   steps:
-  - name: $github
-    run:   |
-        echo "${{ github.event.issue.body }}"
-        echo "${{ toJson(github) }}"
 
   - name: get release/announcement
     id: rel_annou
+    env:
+      ISSUE_CONTEXT: ${{ toJson(github.event.issue) }}
     run: |
-      if [[ "${{ github.event.issue.title }}" == *"Release"* ]]
+      echo $ISSUE_CONTEXT > temp_title.txt
+      echo $(cat temp_title.txt)
+      sed -nr 's/.*"title": (.*), "updated.*/\1/p' <temp_title.txt >title.txt
+      echo $(cat title.txt)
+      if [[ $(cat title.txt) == *"Release"* ]]
       then
         echo "::set-output name=release::true"
       else
@@ -25,13 +27,31 @@ jobs:
 
   - name: Get summary
     id: summary
+    env:
+      ISSUE_CONTEXT: ${{ toJson(github.event.issue) }}
     run: |
-      echo "${{ github.event.issue.body }}" > temp.txt
-      tr -d '\n' <temp.txt >temp1.txt 
-      tr -d '\r' <temp1.txt >temp2.txt
-      sed -nr 's/.*### Brief description of the announcement(.*)### Detailed context.*/\1/p' <temp2.txt >temp3.txt
-      echo "::set-output name=summary::$(cat temp3.txt)"   
+      echo $ISSUE_CONTEXT > temp.txt
+      sed -nr 's/.*### Brief description of the announcement(.*)### Detailed context.*/\1/p' <temp.txt >temp5.txt
+      echo "::set-output name=summary::$(cat temp5.txt)"
       
+  - name: Get title
+    id: title
+    env:
+      ISSUE_CONTEXT: ${{ toJson(github.event.issue) }}
+    run: |
+      echo $ISSUE_CONTEXT > temp_title.txt
+      sed -nr 's/.*"title": (.*), "updated.*/\1/p' <temp_title.txt >title.txt
+      echo "::set-output name=title::$(cat title.txt)"
+
+  - name: Get description
+    id: description
+    env:
+      ISSUE_CONTEXT: ${{ toJson(github.event.issue) }}
+    run: |
+      echo $ISSUE_CONTEXT > temp.txt
+      sed -nr 's/.*"body": (.*), "closed_at.*/\1/p' <temp.txt >temp5.txt
+      echo "::set-output name=description::$(cat temp5.txt)"  
+
   - name: Get current date
     id: date
     run: |
@@ -44,4 +64,4 @@ jobs:
       token: ${{ secrets.CODE_REPO_ACCESS_TOKEN }}
       repository: icub-tech-iit/code
       event-type: announcement_launched
-      client-payload: '{"description": ${{ toJson(github.event.issue.body) }}, "id": "${{ steps.date.outputs.date }}", "title": ${{ toJson(github.event.issue.title) }}, "date": "${{ steps.date.outputs.date_spelled }}", "summary": "${{ steps.summary.outputs.summary }}", "image": "???", "type" : "announcement_launched", "release": "${{ steps.rel_annou.outputs.release }}"}'
+      client-payload: '{"description": ${{ steps.description.outputs.description }}, "id": "${{ steps.date.outputs.date }}", "title": ${{ steps.title.outputs.title }}, "date": "${{ steps.date.outputs.date_spelled }}", "summary": "${{ steps.summary.outputs.summary }}", "image": "???", "type" : "announcement_launched", "release": "${{ steps.rel_annou.outputs.release }}"}'
