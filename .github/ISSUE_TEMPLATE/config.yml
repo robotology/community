@@ -2,7 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: iCub Tech Support
     url: https://github.com/robotology/icub-tech-support
-    about: To open tickets related to robot maintainance.
+    about: To open tickets related to robot maintenance.
   - name: iCub Community Forum
     url: https://spectrum.chat/icub
     about: For general discussions.
