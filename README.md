@@ -10,7 +10,7 @@ Use this place to connect with other members of our community. We hope that you:
 - Engage with other community members.
 - Welcome others and are open-minded. Remember that this is a community we build together 💪
 
-### To ask questions and/or look for answers visit our [**`Discussions`**](../../discussions).
+### To ask questions and/or look for answers visit our [**`Discussions`**](../../discussions) 🗣
 
 ### [General rules for posting](/.github/SUPPORT.md)
 
