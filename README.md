@@ -4,12 +4,14 @@
 [![ZenHub](https://img.shields.io/badge/Shipping_faster_with-ZenHub-435198.svg)](https://zenhub.com)
 [![Discussion](https://img.shields.io/badge/Post-New_Discussion-blue?style=plastic&logo=github)](../../discussions/new)
 
-### This repository hosts Discussions and Q&A for the whole robotology group!
+<img align="left" width="230" height="230" src="./assets/icub-head.png">
+
+### This repository hosts Discussions and Q&A for whole Robotology!
 Use this place to connect with other members of our community. We hope that you:
 - Ask questions you’re wondering about.
 - Share ideas.
 - Engage with other community members.
-- Welcome others and are open-minded. Remember that this is a community we build together 💪
+- Welcome others and are open-minded.
 
 ## 🗣 [`Channels`](../../discussions)
 - 🏛 The community hall [`General`](../../discussions/categories/general) contains general-purpose posts.
