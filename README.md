@@ -4,7 +4,7 @@
 [![ZenHub](https://img.shields.io/badge/Shipping_faster_with-ZenHub-435198.svg)](https://zenhub.com)
 [![Discussion](https://img.shields.io/badge/Post-New_Discussion-blue?style=plastic&logo=github)](../../discussions/new)
 
-<img align="left" width="230" height="230" src="./assets/icub-head.png">
+<img align="left" width="250" height="250" src="./assets/icub-head.png">
 
 ### This repository hosts Discussions and Q&A for whole Robotology!
 Use this place to connect with other members of our community. We hope that you:
