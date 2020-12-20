@@ -15,7 +15,7 @@ Use this place to connect with other members of our community. We hope that you:
 - 🏛 The community hall [`General`](../../discussions/categories/general) contains general-purpose posts.
 - 🚀 Want to have a quick glance at the most recent released components? Visit [`Releases`](../../discussions/categories/releases).
 - 🙋🏻‍♂️ To get help on the software, visit the channel [`Q&A`](../../discussions/categories/q-a).
-- 📰 To get updates on the research currently done on the iCub and more in general on robots, visit the channel [`Research ews`](../../discussions/categories/research-news).
+- 📰 To get updates on the research currently done on the iCub and more in general on robots, visit the channel [`Research news`](../../discussions/categories/research-news).
 - 📣 General announcements are published in the channel [`Announcements`](../../discussions/categories/announcements).
 - 🏫 Are you a scholar who wants to learn more about Robotics or simply a newbie who wants to quickly catch up? Apply to our [`Schools and crash courses`](../../discussions/categories/schools-and-crash-courses).
 - ⚙ Want to discuss a particular technical aspect of your research? Visit [`Show and tell`](../../discussions/categories/show-and-tell).
