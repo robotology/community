@@ -6,8 +6,9 @@
 
 <img align="left" width="250" height="250" src="./assets/icub-head.png">
 
-### This repository hosts Discussions and Q&A for whole Robotology!
-Use this place to connect with other members of our community. We hope that you:
+### This repository hosts Discussions and Q&A for the whole Robotology group!
+Use this place to connect with other members of our community.
+We hope that you:
 - Ask questions you’re wondering about.
 - Share ideas.
 - Engage with other community members.
