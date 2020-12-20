@@ -33,5 +33,8 @@ To get support for robot maintenance, please visit our [robot specific tickets s
 - [Humanoid Sensing and Perception](https://www.iit.it/research/lines/humanoid-sensing-and-perception)
 - [Dynamic Interaction Control](https://dic.iit.it)
 - [Event Driven Perception for Robotics](https://edpr.iit.it)
+- [Robotics Brain and Cognitive Sciences](https://iit.it/research/lines/robotics-brain-and-cognitive-sciences)
+- [Social cognition in human-robot interaction](https://iit.it/research/lines/social-cognition-in-human-robot-interaction)
+- [Cognitive Architecture for Collaborative Technologies](https://iit.it/research/lines/cognitive-architecture-for-collaborative-technologies)
 - [Robotology](https://github.com/robotology)
 - [YouTube](https://www.youtube.com/user/robotcub)
