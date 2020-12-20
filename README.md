@@ -22,10 +22,10 @@ Use this place to connect with other members of our community. We hope that you:
 - ⚙ Want to discuss a particular technical aspect of your research? Visit [`Show and tell`](../../discussions/categories/show-and-tell).
 - 💡 Have something to develop or a proposal you want to share with us? Visit [`Ideas`](../../discussions/categories/ideas).
 
-### 📃 [`General rules for posting`](/.github/SUPPORT.md)
+📃 [`General rules for posting`](/.github/SUPPORT.md)
 
 ## 🛠 `Support`
-- To get support for robot maintenance, please visit our [robot specific tickets system](https://github.com/robotology/icub-tech-support/issues) on GitHub.
+To get support for robot maintenance, please visit our [robot specific tickets system](https://github.com/robotology/icub-tech-support/issues) on GitHub.
 
 ## 🌐 `Online resources`
 - [iCub](https://icub.iit.it)
