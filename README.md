@@ -1,8 +1,8 @@
 🤖 Welcome to the Robotology Community 👋🏻
 ==========================================
 
-[![ZenHub](https://img.shields.io/badge/Shipping_faster_with-ZenHub-435198.svg)](https://zenhub.com)
 [![Discussion](https://img.shields.io/badge/Post-New_Discussion-blue?style=plastic&logo=github)](../../discussions/new)
+[![ZenHub](https://img.shields.io/badge/Shipping_faster_with-ZenHub-435198.svg)](https://zenhub.com)
 
 <img align="left" width="250" height="250" src="./assets/icub-head.png">
 
