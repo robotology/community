@@ -20,7 +20,8 @@ We hope that you:
 - 🙋🏻‍♂️ To get help on the software, visit the channel [`Q&A`](../../discussions/categories/q-a).
 - 📰 To get updates on the research currently done on the iCub and more in general on robots, visit the channel [`Research news`](../../discussions/categories/research-news).
 - 📣 General announcements are published in the channel [`Announcements`](../../discussions/categories/announcements).
-- 🏫 Are you a scholar who wants to learn more about Robotics or simply a newbie who wants to quickly catch up? Apply to our [`Schools and crash courses`](../../discussions/categories/schools-and-crash-courses).
+- 🏫 Are you a scholar who wants to learn more about Robotics or a newcomer who wants to quickly catch up? Apply to our [`Schools and crash courses`](../../discussions/categories/schools-and-crash-courses).
+- 👨🏻‍🔬 Check out if you have been part of the hall of fame of our [Researcher of the week](../../discussions/categories/researcher-of-the-week).
 - ⚙ Want to discuss a particular technical aspect of your research? Visit [`Show and tell`](../../discussions/categories/show-and-tell).
 - 💡 Have something to develop or a proposal you want to share with us? Visit [`Ideas`](../../discussions/categories/ideas).
 
