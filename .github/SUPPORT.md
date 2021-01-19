@@ -10,7 +10,7 @@
   [**searching among existing discussions**](../../../discussions).
 - 🔍 [**Advanced search syntax**][1] is also available for discussions.
 - ⚙ Post on [**`icub-tech-support`**](https://github.com/robotology/icub-tech-support) any request for robot maintenance
-  (e.g. issues related to hardware and/or robot configuration files).
+  (e.g. issues related to hardware, robot configuration files, updates of the robot operating system).
 
 If you would like us to review your code, please post your snippets to [**`Gist`**](https://gist.github.com),
 including instructions to run them.
