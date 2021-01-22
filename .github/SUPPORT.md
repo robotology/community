@@ -3,7 +3,7 @@
 
 - 🏛 We host here open **discussions to support our community**.
 - #️⃣ Discussions are grouped up in different **categories**. Thus, choose the category that best represents your post.
-- ❔ Post here **general questions**. Try to avoid reporting bugs and/or feature requests that are code specific;
+- ❔ Post here **general questions**. Try to avoid reporting bugs and/or requests that are repo-specific;
   for this purpose, instead, rely on the issue tracking system of the relative repository (e.g. [**`yarp`**](https://github.com/robotology/yarp),
   [**`icub-main`**](https://github.com/robotology/icub-main) ...).
 - 👀 Before raising a new question, please check whether your problem has already found a possible solution by
