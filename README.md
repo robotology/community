@@ -33,6 +33,7 @@ To get support for robot maintenance, please visit our [robot specific tickets s
 ## 🌐 `Online resources`
 - [iCub](https://icub.iit.it)
 - [Istituto Italiano di Tecnologia (IIT)](http://www.iit.it)
+- [Robot Bazaar](https://robot-bazaar.iit.it/homepage)
 - [iCub Tech](https://iit.it/research/facilities/icub-tech)
 - [Humanoid Sensing and Perception](https://www.iit.it/research/lines/humanoid-sensing-and-perception)
 - [Dynamic Interaction Control](https://dic.iit.it)
