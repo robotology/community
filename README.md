@@ -32,8 +32,9 @@ To get support for robot maintenance, please visit our [robot specific tickets s
 
 ## 🌐 `Online resources`
 - [iCub](https://icub.iit.it)
-- [Istituto Italiano di Tecnologia (IIT)](http://www.iit.it)
 - [Robot Bazaar](https://robot-bazaar.iit.it/homepage)
+- [Robotology](https://github.com/robotology)
+- [YouTube](https://www.youtube.com/user/robotcub)
 - [iCub Tech](https://iit.it/research/facilities/icub-tech)
 - [Humanoid Sensing and Perception](https://www.iit.it/research/lines/humanoid-sensing-and-perception)
 - [Dynamic Interaction Control](https://dic.iit.it)
@@ -41,5 +42,3 @@ To get support for robot maintenance, please visit our [robot specific tickets s
 - [Robotics Brain and Cognitive Sciences](https://iit.it/research/lines/robotics-brain-and-cognitive-sciences)
 - [Social Cognition in Human-Robot Interaction](https://iit.it/research/lines/social-cognition-in-human-robot-interaction)
 - [Cognitive Architecture for Collaborative Technologies](https://iit.it/research/lines/cognitive-architecture-for-collaborative-technologies)
-- [Robotology](https://github.com/robotology)
-- [YouTube](https://www.youtube.com/user/robotcub)
