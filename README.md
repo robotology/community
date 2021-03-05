@@ -6,7 +6,7 @@
 
 <img align="left" width="250" height="250" src="./assets/icub-head.png">
 
-### This repository hosts Discussions and Q&A for the whole Robotology group!
+### This repository hosts Discussions and Q&A addressing the iCub and YARP ecosystems!
 Use this place to connect with other members of our community.
 We hope that you:
 - Ask questions you’re wondering about.
