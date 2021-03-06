@@ -24,6 +24,7 @@ We hope that you:
 - 👨🏻‍🔬 Check out if you have been part of our [`Researcher of the week`](../../discussions/categories/researcher-of-the-week) hall of fame.
 - ⚙ Want to discuss a particular technical aspect of your research? Visit [`Show and tell`](../../discussions/categories/show-and-tell).
 - 💡 Have something to develop or a proposal you want to share with us? Visit [`Ideas`](../../discussions/categories/ideas).
+- 👂🏻 For reporting feedback on the use of the community in general, please visit [`Feedback & Meta`](../../discussions/categories/feedback-meta).
 
 📃 [`General rules for posting`](/.github/SUPPORT.md)
 
