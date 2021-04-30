@@ -36,7 +36,7 @@ To get support for robot maintenance, please visit our [robot specific tickets s
 - [Robot Bazaar](https://robot-bazaar.iit.it/homepage)
 - [Robotology](https://github.com/robotology)
 - [YouTube](https://www.youtube.com/user/robotcub)
-- [iCub Tech](https://iit.it/research/facilities/icub-tech)
+- [iCub Tech](https://www.iit.it/web/icub-tech)
 - [Humanoid Sensing and Perception](https://www.iit.it/research/lines/humanoid-sensing-and-perception)
 - [Dynamic Interaction Control](https://dic.iit.it)
 - [Event Driven Perception for Robotics](https://edpr.iit.it)
