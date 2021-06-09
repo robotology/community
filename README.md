@@ -29,7 +29,7 @@ We hope that you:
 📃 [`General rules for posting`](/.github/SUPPORT.md)
 
 ## 🛠 `Support`
-To get support for robot maintenance, please visit our [robot specific tickets system](https://github.com/robotology/icub-tech-support/issues) on GitHub.
+To get support for robot maintenance and more in general for hardware-related issues, please visit our [robot specific tickets system](https://github.com/robotology/icub-tech-support/issues) on GitHub.
 
 ## 🌐 `Online resources`
 - [iCub](https://icub.iit.it)
