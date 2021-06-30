@@ -26,8 +26,8 @@ jobs:
     id: summary
     run: |
       echo "${{ github.event.discussion.body }}" > body.txt
-      sed -nr 's/.*### Brief description of the announcement(.*)### Detailed context.*/\1/p' <body.txt >body.txt
-      echo "::set-output name=body::$(cat body.txt)"
+      sed -nr 's/.*### Brief description of the announcement(.*)### Detailed context.*/\1/p' <body.txt >summary.txt
+      echo "::set-output name=body::$(cat summary.txt)"
 
   - name: Fetch description
     id: description
