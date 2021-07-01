@@ -1,15 +1,19 @@
-name: Auto-upload announcements to Bazaar
+name: Dispatch announcements to Bazaar
 
 on:
   discussion:
     types: [pinned]    
 
 jobs:
- sendAnnouncement:
+ DispatchAnnouncement:
   runs-on: ubuntu-latest
-  if: github.event.discussion.category.name == 'Announcements' || github.event.discussion.category.name == 'Releases' || github.event.discussion.category.name == 'Research news' || github.event.discussion.category.name == 'Schools and crash courses'
-  steps:
-  
+  if: |
+    github.event.discussion.category.name == 'Announcements' ||
+    github.event.discussion.category.name == 'Releases' ||
+    github.event.discussion.category.name == 'Research news' ||
+    github.event.discussion.category.name == 'Schools and crash courses'
+    
+  steps:  
   - name: Fetch announcement
     id: announcement
     run: |
