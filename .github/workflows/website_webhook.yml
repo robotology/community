@@ -12,21 +12,10 @@ jobs:
   - name: Fetch announcement
     id: announcement
     run: |
-      category="${{ github.event.discussion.category.name }}"
-      title="${{ github.event.discussion.title }}"
-      body="${{ github.event.discussion.body }}"
+      echo "::set-output name=category::${{ github.event.discussion.category.name }}"
+      echo "::set-output name=title::${{ github.event.discussion.title }}"
+      echo "::set-output name=body::${{ github.event.discussion.body }}"
       
-      echo "::set-output name=title::${title}"
-      echo "::set-output name=summary::${body:0:500}"
-      echo "::set-output name=description::${body}"
-      
-      if [[ "${category}" == "Releases" ]]
-      then
-        echo "::set-output name=is_release::true"
-      else
-        echo "::set-output name=is_release::false"
-      fi      
-
   - name: Fetch current date
     id: date
     run: |
@@ -39,4 +28,4 @@ jobs:
       token: ${{ secrets.CODE_REPO_ACCESS_TOKEN }}
       repository: icub-tech-iit/code
       event-type: announcement_launched
-      client-payload: '{"description": ${{ steps.announcement.outputs.description }}, "id": "${{ steps.date.outputs.date }}", "title": ${{ steps.announcement.outputs.title }}, "date": "${{ steps.date.outputs.date_spelled }}", "summary": "${{ steps.announcement.outputs.summary }}", "image": "???", "type" : "announcement_launched", "release": "${{ steps.announcement.outputs.is_release }}"}'
+      client-payload: '{"description": "${{ steps.announcement.outputs.body }}", "id": "${{ steps.date.outputs.date }}", "title": "${{ steps.announcement.outputs.title }}", "date": "${{ steps.date.outputs.date_spelled }}", "image": "???", "type" : "announcement_launched", "category": "${{ steps.announcement.outputs.category }}"}'
