@@ -1,4 +1,4 @@
-name: Auto-upload Distro announcements to Bazaar
+name: Auto-upload announcements to Bazaar
 
 on:
   discussion:
