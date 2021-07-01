@@ -7,6 +7,7 @@ on:
 jobs:
  sendAnnouncement:
   runs-on: ubuntu-latest
+  if: github.event.discussion.category.name == 'Announcements' || github.event.discussion.category.name == 'Releases' || github.event.discussion.category.name == 'Research news' || github.event.discussion.category.name == 'Schools and crash courses'
   steps:
   
   - name: Fetch announcement
