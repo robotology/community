@@ -40,4 +40,4 @@ jobs:
       token: ${{ secrets.CODE_REPO_ACCESS_TOKEN }}
       repository: icub-tech-iit/code
       event-type: announcement_launched
-      client-payload: '{"description": "${{ steps.description.outputs.body }}", "id": "${{ steps.date.outputs.date }}", "title": "${{ steps.announcement.outputs.title }}", "date": "${{ steps.date.outputs.date_spelled }}", "image": "???", "type" : "announcement_launched", "category": "${{ steps.announcement.outputs.category }}"}'
+      client-payload: '{"description": ${{ steps.description.outputs.body }}, "id": "${{ steps.date.outputs.date }}", "title": "${{ steps.announcement.outputs.title }}", "date": "${{ steps.date.outputs.date_spelled }}", "image": "???", "type" : "announcement_launched", "category": "${{ steps.announcement.outputs.category }}"}'
