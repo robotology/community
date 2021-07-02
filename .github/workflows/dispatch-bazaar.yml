@@ -20,12 +20,6 @@ jobs:
       echo "::set-output name=category::${{ github.event.discussion.category.name }}"
       echo "::set-output name=title::${{ github.event.discussion.title }}"
       
-      #body="${{ github.event.discussion.body }}"
-      #body="${body//'%'/'%25'}"
-      #body="${body//$'\n'/'%0A'}"
-      #body="${body//$'\r'/'%0D'}"
-      #echo "::set-output name=body::${body}"
-      
   - name: Get body
     id: description
     env:
