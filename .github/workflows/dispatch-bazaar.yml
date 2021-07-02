@@ -26,8 +26,7 @@ jobs:
       ISSUE_CONTEXT: ${{ toJson(github.event.discussion.body) }}
     run: |
       echo $ISSUE_CONTEXT > temp.txt
-      sed -nr 's/.*"body": (.*), "closed_at.*/\1/p' <temp.txt >temp5.txt
-      echo "::set-output name=body::$(cat temp5.txt)"
+      echo "::set-output name=body::$(cat temp.txt)"
       
   - name: Fetch current date
     id: date
