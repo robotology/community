@@ -20,11 +20,20 @@ jobs:
       echo "::set-output name=category::${{ github.event.discussion.category.name }}"
       echo "::set-output name=title::${{ github.event.discussion.title }}"
       
-      body="${{ github.event.discussion.body }}"
-      body="${body//'%'/'%25'}"
-      body="${body//$'\n'/'%0A'}"
-      body="${body//$'\r'/'%0D'}"
-      echo "::set-output name=body::${body}"
+      #body="${{ github.event.discussion.body }}"
+      #body="${body//'%'/'%25'}"
+      #body="${body//$'\n'/'%0A'}"
+      #body="${body//$'\r'/'%0D'}"
+      #echo "::set-output name=body::${body}"
+      
+  - name: Get body
+    id: description
+    env:
+      ISSUE_CONTEXT: ${{ toJson(github.event.discussion.body) }}
+    run: |
+      echo $ISSUE_CONTEXT > temp.txt
+      sed -nr 's/.*"body": (.*), "closed_at.*/\1/p' <temp.txt >temp5.txt
+      echo "::set-output name=body::$(cat temp5.txt)"
       
   - name: Fetch current date
     id: date
@@ -38,4 +47,4 @@ jobs:
       token: ${{ secrets.CODE_REPO_ACCESS_TOKEN }}
       repository: icub-tech-iit/code
       event-type: announcement_launched
-      client-payload: '{"description": "${{ steps.announcement.outputs.body }}", "id": "${{ steps.date.outputs.date }}", "title": "${{ steps.announcement.outputs.title }}", "date": "${{ steps.date.outputs.date_spelled }}", "image": "???", "type" : "announcement_launched", "category": "${{ steps.announcement.outputs.category }}"}'
+      client-payload: '{"description": ${{ steps.description.outputs.body }}, "id": "${{ steps.date.outputs.date }}", "title": "${{ steps.announcement.outputs.title }}", "date": "${{ steps.date.outputs.date_spelled }}", "image": "???", "type" : "announcement_launched", "category": "${{ steps.announcement.outputs.category }}"}'
