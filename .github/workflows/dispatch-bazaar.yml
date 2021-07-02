@@ -19,7 +19,9 @@ jobs:
     run: |
       echo "::set-output name=category::${{ github.event.discussion.category.name }}"
       echo "::set-output name=title::${{ github.event.discussion.title }}"
-      echo "::set-output name=body::${{ github.event.discussion.body }}"
+      
+      echo "${{ github.event.discussion.body }}" > body
+      echo "::set-output name=body::$(cat body)"
       
   - name: Fetch current date
     id: date
