@@ -16,17 +16,14 @@ jobs:
   steps:  
   - name: Fetch announcement
     id: announcement
+    env:
+      BODY: ${{ toJson(github.event.discussion.body) }}   
     run: |
       echo "::set-output name=category::${{ github.event.discussion.category.name }}"
       echo "::set-output name=title::${{ github.event.discussion.title }}"
       
-  - name: Get body
-    id: description
-    env:
-      ISSUE_CONTEXT: ${{ toJson(github.event.discussion.body) }}
-    run: |
-      echo $ISSUE_CONTEXT > temp.txt
-      echo "::set-output name=body::$(cat temp.txt)"
+      echo ${BODY} > body.txt
+      echo "::set-output name=body::$(cat body.txt)"
       
   - name: Fetch current date
     id: date
@@ -40,4 +37,4 @@ jobs:
       token: ${{ secrets.CODE_REPO_ACCESS_TOKEN }}
       repository: icub-tech-iit/code
       event-type: announcement_launched
-      client-payload: '{"description": ${{ steps.description.outputs.body }}, "id": "${{ steps.date.outputs.date }}", "title": "${{ steps.announcement.outputs.title }}", "date": "${{ steps.date.outputs.date_spelled }}", "image": "???", "type" : "announcement_launched", "category": "${{ steps.announcement.outputs.category }}"}'
+      client-payload: '{"description": ${{ steps.announcement.outputs.body }}, "id": "${{ steps.date.outputs.date }}", "title": "${{ steps.announcement.outputs.title }}", "date": "${{ steps.date.outputs.date_spelled }}", "image": "???", "type" : "announcement_launched", "category": "${{ steps.announcement.outputs.category }}"}'
