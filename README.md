@@ -38,7 +38,7 @@ To get support for robot maintenance and more in general for hardware-related is
 - [YouTube](https://www.youtube.com/user/robotcub)
 - [iCub Tech](https://www.iit.it/web/icub-tech)
 - [Humanoid Sensing and Perception](https://www.iit.it/research/lines/humanoid-sensing-and-perception)
-- [Dynamic Interaction Control](https://dic.iit.it)
+- [Artificial and Mechanical Intelligence](https://ami.iit.it)
 - [Event Driven Perception for Robotics](https://edpr.iit.it)
 - [Robotics Brain and Cognitive Sciences](https://www.iit.it/web/robotics-brain-and-cognitive-sciences)
 - [Social Cognition in Human-Robot Interaction](https://www.iit.it/web/social-cognition-in-human-robot-interaction)
