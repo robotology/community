@@ -19,17 +19,17 @@ jobs:
     env:
       BODY: ${{ toJson(github.event.discussion.body) }}   
     run: |
-      echo "::set-output name=category::${{ github.event.discussion.category.name }}"
-      echo "::set-output name=title::${{ github.event.discussion.title }}"
+      echo "category=${{ github.event.discussion.category.name }}" >> $GITHUB_OUTPUT
+      echo "title=${{ github.event.discussion.title }}" >> $GITHUB_OUTPUT
       
       echo ${BODY} > body.txt
-      echo "::set-output name=body::$(cat body.txt)"
+      echo "body=$(cat body.txt)" >> $GITHUB_OUTPUT
       
   - name: Fetch current date
     id: date
     run: |
-        echo "::set-output name=date::$(date +'%Y%m')"
-        echo "::set-output name=date_spelled::$(date +'%B %Y')"
+        echo "date=$(date +'%Y%m')" >> $GITHUB_OUTPUT
+        echo "date_spelled=$(date +'%B %Y')" >> $GITHUB_OUTPUT
 
   - name: Repository Dispatch
     uses: peter-evans/repository-dispatch@v1.1.3
