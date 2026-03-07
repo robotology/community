@@ -35,7 +35,7 @@ To get support for robot maintenance and more in general for hardware-related is
 - [iCub](https://icub.iit.it)
 - [Robotology](https://github.com/robotology)
 - [YouTube](https://www.youtube.com/user/robotcub)
-- [iCub Tech](https://icub-tech.iit.it)
+- [Mechatronics for Embodied Systems and Humanoids](https://mesh.iit.it)
 - [Humanoid Sensing and Perception](https://www.iit.it/research/lines/humanoid-sensing-and-perception)
 - [Artificial and Mechanical Intelligence](https://ami.iit.it)
 - [Event Driven Perception for Robotics](https://edpr.iit.it)
